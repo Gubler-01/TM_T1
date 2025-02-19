@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADD8E6"
+    tools:context=".Principal">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+      <TextView
+          android:id="@+id/tvTitulo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Menú Principal"
+          android:textSize="35sp"
+          android:textStyle="bold"
+          android:gravity="center"
+          android:layout_marginBottom="16dp"
+          android:textColor="#333333"/>
+
+      <FrameLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:gravity="center">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:gravity="center">
+
+          <ImageButton
+              android:id="@+id/btnAcercaDe"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/ic_about"
+              android:contentDescription="Acerca de"
+              android:scaleType="fitCenter"
+              android:background="#FFB6C1"
+              android:layout_margin="8dp"/>
+
+          <ImageButton
+              android:id="@+id/btnTelevision"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/ic_tv"
+              android:contentDescription="Televisión"
+              android:scaleType="fitCenter"
+              android:background="#FFB6C1"
+              android:layout_margin="8dp"/>
+
+          <ImageButton
+              android:id="@+id/btnGaleria"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/ic_gallery"
+              android:contentDescription="Galería"
+              android:scaleType="fitCenter"
+              android:background="#FFB6C1"
+              android:layout_margin="8dp"/>
+
+          <ImageButton
+              android:id="@+id/btnCamara"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/ic_camera"
+              android:contentDescription="Cámara"
+              android:scaleType="fitCenter"
+              android:background="#FFB6C1"
+              android:layout_margin="8dp"/>
+
+          <ImageButton
+              android:id="@+id/btnLinterna"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/ic_flashlight"
+              android:contentDescription="Linterna"
+              android:scaleType="fitCenter"
+              android:background="#FFB6C1"
+              android:layout_margin="8dp"/>
+
+          <ImageButton
+              android:id="@+id/btnPestanias"
+              android:layout_width="80dp"
+              android:layout_height="80dp"
+              android:src="@drawable/ic_tabs"
+              android:contentDescription="Pestañas"
+              android:scaleType="fitCenter"
+              android:background="#FFB6C1"
+              android:layout_margin="8dp"/>
+        </GridLayout>
+      </FrameLayout>
+
+      <ImageButton
+          android:id="@+id/btnSalir"
+          android:layout_width="80dp"
+          android:layout_height="80dp"
+          android:src="@drawable/ic_exit"
+          android:contentDescription="Salir"
+          android:scaleType="fitCenter"
+          android:background="#FFDEAD"
+          android:layout_marginTop="16dp"/>
+    </LinearLayout>
+  </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
